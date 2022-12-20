@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10002</projectId>
+    <projectKey>PROJ</projectKey>
+    <exportDate>2022-12-20 01:06:55 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="77261311" key="PROJ-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Daniella Santana</createdBy>
+            <createdOn>2022-12-19 18:32:34 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>PROJ-22</key>
+                    <summary><![CDATA[Autentificação de usuário]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Redefinição de senha]]></name>
+            <owner>62b9b549f53d916738679acc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given Dado que o usuário deseje redefinir a senha
+When Quando informar o e-mail
+And E receber o link para redefinição de senha
+Then Então a nova senha é cadastrada para o usuário realizar login.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77261597" key="PROJ-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Daniella Santana</createdBy>
+            <createdOn>2022-12-19 18:58:07 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>PROJ-15</key>
+                    <summary><![CDATA[Autentificação de usuário]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Login com o e-mail]]></name>
+            <owner>62b9b549f53d916738679acc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given Dado que o usuário deseje fazer login com o e-mail
+When Quando esquecer o "username"
+And e informar o e-mail
+Then Então o usuário será redirecionado para uma tela de login solicitando e-mail e senha.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77261612" key="PROJ-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Daniella Santana</createdBy>
+            <createdOn>2022-12-19 19:00:26 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>PROJ-21</key>
+                    <summary><![CDATA[Autentificação de usuário]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Redefinição de senha]]></name>
+            <owner>62b9b549f53d916738679acc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given Dado que o usuário solicite redefinição de senha
+When Quando a sua conta for invadida por terceiros
+And informar por e-mail ou suporte ao cliente
+Then deverá receber um link para redefinição de senha.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77261653" key="PROJ-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Daniella Santana</createdBy>
+            <createdOn>2022-12-19 19:05:16 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>PROJ-20</key>
+                    <summary><![CDATA[Usuário não consegue selecionar outra opção de pagamento]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Opção de pagamento com boleto]]></name>
+            <owner>62b9b549f53d916738679acc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a p&aacute;gina &quot;Checkout: Overview &quot;]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio dever&aacute; visualizar nas op&ccedil;&otilde;es de pagamento o boleto. <br /><br />]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Ao clicar em &quot;Finish&quot;<br /><br />]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio dever&aacute; receber por e-mail o boleto para efetuar o pagamento.&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="77261674" key="PROJ-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Daniella Santana</createdBy>
+            <createdOn>2022-12-19 19:08:09 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Opção de pagamento com Pix]]></name>
+            <objective><![CDATA[]]></objective>
+            <owner>62b9b549f53d916738679acc</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Ao acessar a p&aacute;gina &quot;Checkout: Overview&quot;]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio dever&aacute; visualizar nas op&ccedil;&otilde;es de pagamento Pix<br /><br />]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Ao selecionar Pix e clicar em &quot;Finish&quot;]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio dever&aacute; visualizar a chave de pix para efetuar o pagamento. <br /><br />]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
